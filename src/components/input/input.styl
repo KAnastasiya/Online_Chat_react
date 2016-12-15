@@ -1,0 +1,48 @@
+@require '../../utils/styl/common.styl'
+
+.chat
+  &__textarea,
+  &__input
+    placeholder(placeholderColor)
+    width 100%
+    padding 0 10px
+    color inputColor
+    background-color #fff
+    border 1px solid inputBorder
+    border-radius 4px
+    resize none
+    overflow auto
+
+    &:focus
+      outline none
+
+    &:not(.chat__input_invalid):focus
+      border-color mainBg
+
+  &__input
+    height 32px
+
+  &__textarea
+    height 60px
+    padding-top 10px
+    padding-bottom 10px
+    line-height 1.4
+    vertical-align top
+
+  &__input_invalid
+    border-color errorColor
+    box-shadow none
+    outline 0
+
+  &__input-error
+    width 295px
+    height 13px
+    margin 4px 0 0 4px
+
+    color errorColor
+    font-size 12px
+    overflow hidden
+    line-height 1
+    text-align left
+    white-space nowrap
+    text-overflow ellipsis

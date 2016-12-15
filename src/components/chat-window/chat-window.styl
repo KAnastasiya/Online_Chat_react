@@ -1,0 +1,95 @@
+@require '../../utils/styl/common.styl'
+
+.chat__wrapper
+  width 325px
+  background-color bodyBg
+  border-radius 2px
+  box-shadow 0 5px 21px -4px rgba(0, 0, 0, 0.3)
+
+.chat__header
+  position relative
+  padding 10px 20px 10px 10px
+  border-top-left-radius 2px
+  border-top-right-radius 2px
+
+  color mainColor
+  background-color mainBg
+
+.chat__header-img
+  border-radius 50%
+  margin 0 16px 0 8px
+  vertical-align middle
+
+.chat__header-text,
+.chat__header-operatorName
+  width 210px
+  margin 0
+  display inline-block
+  vertical-align middle
+  line-height 1.3
+
+.chat__header-operatorTip
+  font-size 12px
+  margin 4px 0 0
+  opacity 0.5
+
+.btn-close
+  width 12px
+  height 12px
+  background url(img/close.svg) no-repeat center
+  background-size contain
+  border none
+  cursor pointer
+  opacity 0.3
+
+  position absolute
+  top 15px
+  right 10px
+
+  &:hover,
+  &:focus
+    opacity 0.7
+
+  &:focus
+    outline none
+
+  &:active
+    opacity 0.7
+
+.chat__body
+  height 370px
+  padding 20px 0 15px
+  position relative
+
+.chat__tip
+  font-size 13px
+  color orgMessageColor
+
+  width 100%
+  max-width 98%
+  padding 10px 15px
+  margin 0 0 20px 5px
+  border-radius 10px
+  background-color orgMessageBg
+
+  position relative
+  display inline-block
+  vertical-align top
+
+  &::before
+    arrow(orgMessageBg, -10px, initial)
+
+.chat-appear
+  transform translate(0, 500px)
+  visibility visible
+
+  &.chat-appear-active
+    transform translate(0, 0)
+    transition all 600ms linear
+
+.operInfo-appear
+  opacity 0
+
+  &.operInfo-appear-active
+    opacity 1
+    transition opacity 400ms ease-in

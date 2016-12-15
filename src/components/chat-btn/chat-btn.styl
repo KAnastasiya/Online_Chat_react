@@ -1,0 +1,49 @@
+@require '../../utils/styl/common.styl'
+
+.btn-chat
+  max-width 250px
+  height 40px
+  padding 0 20px 0 55px
+  border none
+  border-radius 2px
+  border-top-left-radius 2px
+  border-top-right-radius 2px
+
+  color mainColor
+  background-color mainBg
+
+  text-align left
+  white-space nowrap
+  text-overflow ellipsis
+  overflow hidden
+
+  position relative
+  cursor pointer
+
+  &::before
+    content ''
+    width 25px
+    height 32px
+    background url(img/chat.svg) no-repeat center
+    background-size contain
+
+    position absolute
+    top 50%
+    left 15px
+    transform translateY(-50%)
+
+  &:hover,
+  &:focus
+    outline none
+    box-shadow 0px 0px 4px #999
+
+  &:active
+    box-shadow none
+
+.btnChat-appear
+  transform translate(0, 150px)
+  visibility visible
+
+  &.btnChat-appear-active
+    transform translate(0, 0)
+    transition all 1000ms linear

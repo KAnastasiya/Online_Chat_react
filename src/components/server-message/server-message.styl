@@ -1,0 +1,30 @@
+@require '../../utils/styl/common.styl'
+
+.server-message
+  max-width 210px
+  padding 10px 12px
+  margin 2px 0
+
+  font-size 13px
+  overflow hidden
+  line-height 1
+  text-align left
+  white-space nowrap
+  text-overflow ellipsis
+
+  &.ok
+    color #777
+    background-color okBg
+
+  &.error
+    color errorColor
+    background-color errorBg
+
+.serverMessage-appear
+  opacity 0
+  transform translate(100%, 0)
+
+  &.serverMessage-appear-active
+    opacity 1
+    transform none
+    transition all 700ms ease-in

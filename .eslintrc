@@ -1,0 +1,39 @@
+{
+  "globals": {
+    "React": true,
+    "Redux": true,
+    "ReactRedux": true,
+    "ReactDOM": true,
+    "ReduxForm": true,
+    "ReactCSSTransitionGroup": true,
+    "NODE_ENV": true
+  },
+
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "es6": true
+  },
+
+  "plugins": [
+    "react"
+  ],
+
+  "rules": {
+    "jsx-quotes": [2, "prefer-single"],
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": [2, { ignore: ["children"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": 0,
+    "react/jsx-closing-bracket-location": [2, {"location": "after-props"}],
+    "no-nested-ternary": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "one-var-declaration-per-line": [2, "initializations"],
+    "one-var": [2, { initialized: "never" }],
+    max-len: [0, 120]
+  }
+}

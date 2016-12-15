@@ -1,0 +1,33 @@
+arrow(color, left, right)
+  content ''
+  width 0
+  height 0
+  border-width 15px
+  border-style solid
+  border-color color transparent transparent transparent
+
+  position absolute
+  top 5px
+  left left
+  right right
+
+  z-index 1
+
+clearfix()
+  &::before,
+  &::after
+    content ' '
+    display table
+
+  &::after
+    clear both
+
+placeholder(color)
+  &::-webkit-input-placeholder
+    color color
+
+  &::-moz-placeholder
+    color color
+
+  &:-ms-input-placeholder
+    color color

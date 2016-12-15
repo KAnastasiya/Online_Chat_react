@@ -1,0 +1,55 @@
+@require '../../utils/styl/common.styl'
+
+.chat__message-wrapper
+  clearfix()
+  position relative
+
+.chat__message
+  font-size 13px
+  max-width 85%
+  min-width 60px
+  min-height 35px
+  padding 10px 15px
+  margin-top 0
+  margin-bottom 15px
+  position relative
+  display inline-block
+  vertical-align top
+  border-radius 10px
+
+.chat__message-time
+  color messageTimeColor
+  font-size 12px
+  position absolute
+  top 50%
+  transform translateY(-50%)
+
+.chat__message--user
+  color userMessageColor
+  background-color userMessageBg
+  float right
+
+  &::before
+    arrow(userMessageBg, initial, -10px)
+    transform rotateX(-150deg)
+
+  .chat__message-time
+    left -40px
+
+.chat__message--org
+  color orgMessageColor
+  background-color orgMessageBg
+  float left
+
+  &::before
+    arrow(orgMessageBg, -10px, initial)
+
+  .chat__message-time
+    right -40px
+
+.message-enter
+  opacity 0
+
+  &.message-enter-active
+    opacity 1
+    transition opacity 300ms ease-in
