@@ -2,6 +2,7 @@
 
 Service for communication between users of site and administrators of this site, based on React + Redux.
 
+
 ## Features
 
 1. Send user's messages.
@@ -10,10 +11,12 @@ Service for communication between users of site and administrators of this site,
 4. Receive contacts, that user already entered.
 5. Send changes in user's contacts.
 
+
 ## Installation
 
 1. Download source code.
 2. Run `npm install` in catalog with source code (to get the project's dependencies).
+
 
 ## Getting started
 
@@ -23,9 +26,14 @@ Service for communication between users of site and administrators of this site,
 *Run `node server.js` in catalog `<catalog with source code>/server` (to run a server at localhost:3000)*.
 3. Open url `http://localhost:8080` in your browser.
 
-## Utils
+
+## Build
 
 - `npm run build` - produces production version (with minification).
+
+
+## Utils
+
 - `npm run lint` - linting JavaScript with [ESLint](http://eslint.org/).
 
 
