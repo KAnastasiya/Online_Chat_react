@@ -11,9 +11,9 @@ const FormContacts = ({ session, setContacts, openDialog }) => (
     transitionLeave={false}>
     <Form
       type='contacts'
-      tips='Вы оставили нам следующие контакты. При необходимости обновите иx'
-      btnPrimaryText='Сохранить'
-      btnAddText='<< Вернуться к диалогу'
+      tips='You left us the following contacts. Update them if necessary'
+      btnPrimaryText='Save'
+      btnAddText='<< Back to dialog'
       session={session}
       submitFunc={setContacts}
       resetFunc={openDialog}>
@@ -21,26 +21,26 @@ const FormContacts = ({ session, setContacts, openDialog }) => (
         type='text'
         id='surname'
         name='surname'
-        placeholder='Фамилия'
+        placeholder='Surname'
         maxlength={35}
         autoFocus />
       <Input
         type='text'
         id='name'
         name='name'
-        placeholder='Имя'
+        placeholder='Name'
         maxlength={35} />
       <Input
         type='text'
         id='phone'
         name='phone'
-        placeholder='Телефон'
+        placeholder='Phone'
         maxlength={13} />
       <Input
         type='text'
         id='email'
         name='email'
-        placeholder='Электронный адрес'
+        placeholder='E-mail'
         maxlength={35} />
     </Form>
   </ReactCSSTransitionGroup>

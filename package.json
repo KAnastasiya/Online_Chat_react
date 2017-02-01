@@ -6,9 +6,8 @@
   "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "serve": "webpack-dev-server --inline --hot",
-    "build": "webpack",
-    "build:prod": "SET NODE_ENV=production&& webpack",
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "SET NODE_ENV=production&& webpack",
     "lint": "eslint src"
   },
   "devDependencies": {
@@ -48,6 +47,6 @@
     "redux-form": "*",
     "redux-logger": "*",
     "redux-thunk": "*",
-    "webpack": "*"
+    "webpack": "1.14"
   }
 }

@@ -7,7 +7,7 @@ export const ServerMessageSuccess = () => (
     transitionAppearTimeout={1000}
     transitionEnter={false}
     transitionLeave={false}>
-    <p className='server-message ok'>Данные сохранены</p>
+    <p className='server-message ok'>Data saved</p>
   </ReactCSSTransitionGroup>
 );
 
@@ -18,6 +18,6 @@ export const ServerMessageFail = () => (
     transitionAppearTimeout={1000}
     transitionEnter={false}
     transitionLeave={false}>
-    <p className='server-message error'>Сервис временно недоступен</p>
+    <p className='server-message error'>Service is temporarily unavailable</p>
   </ReactCSSTransitionGroup>
 );

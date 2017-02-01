@@ -28,7 +28,7 @@ export default class Dialog extends React.Component {
           className='chat__dialog'
           ref={(dialog) => { this.dialog = dialog; }}>
           { messageList.length === 0
-            ? <p className='chat__tip'>Добро пожаловать. Задайте свой вопрос. Рады будем помочь</p>
+            ? <p className='chat__tip'>Welcome. Ask your question. We will be glad to help!</p>
             : null
           }
           {messageList}

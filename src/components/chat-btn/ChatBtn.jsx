@@ -27,7 +27,7 @@ const ChatBtn = ({ needAutoOpened, openChat, autoOpenChat }) => {
         type='button'
         className='btn-chat'
         onClick={handlerClick}>
-        Напишите нам
+        Write to us
       </button>
     </ReactCSSTransitionGroup>
   );

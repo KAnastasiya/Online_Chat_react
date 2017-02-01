@@ -5,15 +5,15 @@ import './form-message.styl';
 const FormMessage = ({ session, sendMessage, openContacts }) => (
   <Form
     type='message'
-    btnPrimaryText='Отправить'
-    btnAddText='Ваши контакты'
+    btnPrimaryText='Send'
+    btnAddText='Your contacts'
     session={session}
     submitFunc={sendMessage}
     resetFunc={openContacts}>
     <Input
       id='message'
       name='message'
-      placeholder='Введите сообщение и нажмите Enter'
+      placeholder='Enter your message'
       maxlength={200}
       autoFocus />
   </Form>

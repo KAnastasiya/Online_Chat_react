@@ -16,20 +16,20 @@ const formatTime = time => `${time.getDate()}.${time.getMonth() + 1}.${time.getF
 
 app.post('/sendMessage', (req, res) => {
   console.log('---------------------------------------------------');
-  console.log(`ИСХОДЯЩЕЕ СООБЩЕНИЕ (${formatTime(new Date())})`);
-  console.log(`Пользователь: ${req.body.session}`);
-  console.log(`Сообщение: ${req.body.text}`);
+  console.log(`OUTGOING MESSAGE (${formatTime(new Date())})`);
+  console.log(`User: ${req.body.session}`);
+  console.log(`Message: ${req.body.text}`);
   res.sendStatus(200);
 });
 
 app.get('/loadMessage', (req, res) => {
   console.log('---------------------------------------------------');
-  console.log(`ВХОДЯЩЕЕ СООБЩЕНИЕ (${formatTime(new Date())})`);
+  console.log(`INCOMING MESSAGE (${formatTime(new Date())})`);
   res.json({
     data: {
-      message: 'Добрый день. Ваш вопрос обратывается, ожидайте',
+      message: 'Hello. Your request is being processed, please wait',
       operator: {
-        name: 'Иванова Ольга',
+        name: 'Hanna Ivanova',
         photoUrl: 'img/operator.jpg',
       },
     },
@@ -38,30 +38,30 @@ app.get('/loadMessage', (req, res) => {
 
 app.post('/setContacts', (req, res) => {
   console.log('---------------------------------------------------');
-  console.log(`ОБНОВЛЕНИЕ КОНТАКТОВ (${formatTime(new Date())})`);
-  console.log(`Пользователь: ${req.body.session}`);
+  console.log(`UPDATING CONTACTS (${formatTime(new Date())})`);
+  console.log(`User: ${req.body.session}`);
   if (req.body.contacts.surname) {
-    console.log(`Фамилия: ${req.body.contacts.surname}`);
+    console.log(`Surname: ${req.body.contacts.surname}`);
   }
   if (req.body.contacts.name) {
-    console.log(`Имя: ${req.body.contacts.name}`);
+    console.log(`Name: ${req.body.contacts.name}`);
   }
   if (req.body.contacts.phone) {
-    console.log(`Телефон: ${req.body.contacts.phone}`);
+    console.log(`Phone: ${req.body.contacts.phone}`);
   }
   if (req.body.contacts.email) {
-    console.log(`Email: ${req.body.contacts.email}`);
+    console.log(`E-mail: ${req.body.contacts.email}`);
   }
   res.sendStatus(200);
 });
 
 app.get('/getContacts', (req, res) => {
   console.log('---------------------------------------------------');
-  console.log(`ПОЛУЧЕНИЕ КОНТАКТОВ (${formatTime(new Date())})`);
+  console.log(`GETTING CONTACTS (${formatTime(new Date())})`);
   res.json({
     contacts: {
-      surname: 'Козенко',
-      name: 'Анастасия',
+      surname: 'Kozenko',
+      name: 'Anastasiia',
       phone: '+38 (099) 99-79-388',
       email: 'kozenko.anastasiia@gmail.com',
     },

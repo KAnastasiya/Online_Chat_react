@@ -59,10 +59,10 @@ const ChatWindow = ({ session, tab, closeChat, sendMessage, setContacts, openCon
                 transitionLeave={false}>
                 <div className='chat__header-text'>
                   <p className='chat__header-operatorName'>{message.operator.name}</p>
-                  <p className='chat__header-operatorTip'>Консультант</p>
+                  <p className='chat__header-operatorTip'>Consultant</p>
                 </div>
               </ReactCSSTransitionGroup>
-              : <p className='chat__header-text'>Напишите нам. Мы онлайн!</p>
+              : <p className='chat__header-text'>Write to us. We are online!</p>
             }
             <button
               type='button'
