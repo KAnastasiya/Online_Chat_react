@@ -3,7 +3,7 @@
 Service for communication between users of site and administrators of this site, based on React + Redux.
 
 
-## Features
+### Features
 
 1. Send user's messages.
 2. Receive administrator's messages.
@@ -12,13 +12,13 @@ Service for communication between users of site and administrators of this site,
 5. Send changes in user's contacts.
 
 
-## Installation
+### Installation
 
 1. Download source code.
 2. Run `npm install` in catalog with source code (to get the project's dependencies).
 
 
-## Getting started
+### Getting started
 
 1. Run local-server with client-side part of service.
 *Run `npm run dev` in catalog with source code (to produce development version and run a watcher at localhost:8080)*.
@@ -27,16 +27,16 @@ Service for communication between users of site and administrators of this site,
 3. Open url `http://localhost:8080` in your browser.
 
 
-## Build
+### Build
 
 - `npm run build` - produces production version (with minification).
 
 
-## Utils
+### Utils
 
 - `npm run lint` - linting JavaScript with [ESLint](http://eslint.org/).
 
 
-## Demo
+### Demo
 
 If you want see, how service look like at client-side, click [this link] (https://kanastasiya.github.io/Online_Chat_react/)
