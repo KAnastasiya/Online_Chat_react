@@ -39,4 +39,4 @@ Service for communication between users of site and administrators of this site,
 
 ### Demo
 
-If you want see, how service look like at client-side, click [this link] (https://kanastasiya.github.io/Online_Chat_react/)
+If you want see, how service look like at client-side, click [this link](https://kanastasiya.github.io/Online_Chat_react/)
